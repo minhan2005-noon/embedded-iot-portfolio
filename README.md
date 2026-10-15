@@ -2,6 +2,9 @@
 
 Portfolio một trang dành cho vị trí Embedded Systems / Industrial IoT Intern.
 
+- Website: [portfolio-cv-pi-henna.vercel.app](https://portfolio-cv-pi-henna.vercel.app)
+- GitHub: [minhan2005-noon/embedded-iot-portfolio](https://github.com/minhan2005-noon/embedded-iot-portfolio)
+
 ## Nội dung
 
 - Giới thiệu định hướng embedded, Edge AI và Industrial IoT.
