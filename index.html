@@ -248,7 +248,8 @@
               <li>Đóng gói backend, web dashboard và Mosquitto bằng Docker Compose.</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/minhan2005-noon/face-recognition-door-lock" target="_blank" rel="noreferrer">Xem repository <span>↗</span></a>
+              <button class="project-link-button" type="button" data-face-demo-open>Demo mô phỏng <span>↗</span></button>
+              <a href="https://github.com/minhan2005-noon/face-recognition-door-lock" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
             </div>
           </article>
 
@@ -367,5 +368,58 @@
         </div>
       </section>
     </main>
+
+    <dialog class="face-demo" id="face-demo" aria-labelledby="face-demo-title">
+      <div class="demo-window">
+        <header class="demo-header">
+          <div>
+            <p>FACE RECOGNITION DOOR LOCK / DEMO</p>
+            <h2 id="face-demo-title">Mô phỏng luồng xác thực cửa</h2>
+          </div>
+          <button class="demo-close" type="button" data-face-demo-close aria-label="Đóng demo">×</button>
+        </header>
+
+        <div class="demo-notice">
+          Mô phỏng giao diện và luồng xử lý — không kết nối camera, dữ liệu sinh trắc học hoặc khóa cửa thật.
+        </div>
+
+        <div class="demo-grid">
+          <section class="camera-simulator" aria-label="Khung hình camera mô phỏng">
+            <div class="camera-meta"><span>CAM_01</span><span id="demo-time">00:00:00</span></div>
+            <div class="face-target" id="face-target">
+              <svg viewBox="0 0 160 200" aria-hidden="true">
+                <path d="M46 70c0-29 14-46 34-46s34 17 34 46v24c0 28-14 50-34 50S46 122 46 94V70Z"></path>
+                <path d="M34 194c3-31 20-48 46-48s43 17 46 48M57 83h11M92 83h11M67 112c8 6 18 6 26 0"></path>
+              </svg>
+              <i></i>
+              <span class="target-corner tl"></span><span class="target-corner tr"></span>
+              <span class="target-corner bl"></span><span class="target-corner br"></span>
+            </div>
+            <div class="camera-status" id="camera-status"><span></span> Camera sẵn sàng</div>
+          </section>
+
+          <section class="demo-process" aria-label="Trạng thái xử lý">
+            <p class="demo-kicker">ACCESS PIPELINE</p>
+            <div class="demo-steps" id="demo-steps">
+              <article data-step="1"><span>01</span><div><strong>Face detection</strong><small>Phát hiện khuôn mặt trong khung hình</small></div><b>WAIT</b></article>
+              <article data-step="2"><span>02</span><div><strong>Feature encoding</strong><small>Trích xuất vector đặc trưng</small></div><b>WAIT</b></article>
+              <article data-step="3"><span>03</span><div><strong>Identity verification</strong><small>Đối chiếu người dùng được cấp quyền</small></div><b>WAIT</b></article>
+              <article data-step="4"><span>04</span><div><strong>MQTT unlock event</strong><small>Gửi lệnh đến bộ điều khiển cửa</small></div><b>WAIT</b></article>
+            </div>
+
+            <div class="demo-result" id="demo-result">
+              <span>ACCESS STATUS</span>
+              <strong>READY</strong>
+              <small>Nhấn “Chạy nhận diện” để bắt đầu mô phỏng.</small>
+            </div>
+
+            <div class="demo-actions">
+              <button class="demo-run" id="demo-run" type="button">Chạy nhận diện</button>
+              <a href="https://github.com/minhan2005-noon/face-recognition-door-lock" target="_blank" rel="noreferrer">Mở GitHub ↗</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>
