@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio của Hoàng Minh Ân - sinh viên Kỹ thuật Vật lý theo hướng Embedded Systems, Edge AI và Industrial IoT."
+    />
+    <meta name="theme-color" content="#07100f" />
+    <meta property="og:title" content="Hoàng Minh Ân | Embedded & Industrial IoT" />
+    <meta
+      property="og:description"
+      content="ESP32, firmware, Edge AI, sensor communication và hệ thống giám sát công nghiệp."
+    />
+    <meta property="og:type" content="website" />
+    <title>Hoàng Minh Ân | Embedded & Industrial IoT</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark">HMA</span>
+        <span class="brand-copy">embedded.sys</span>
+      </a>
+
+      <nav class="nav" aria-label="Điều hướng chính">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span></span><span></span>
+          <span class="sr-only">Mở menu</span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> Available for internship</div>
+          <p class="system-label">SYSTEM PROFILE / 01</p>
+          <h1 id="hero-title">Hoàng Minh <span>Ân</span></h1>
+          <p class="hero-role">Embedded Systems <span>×</span> Edge AI <span>×</span> Industrial IoT</p>
+          <p class="hero-intro">
+            Sinh viên Kỹ thuật Vật lý tại HCMUS, tập trung vào hệ thống nhúng và IoT công nghiệp.
+            Tôi xây dựng trọn đường đi của dữ liệu: từ cảm biến, firmware và xử lý tín hiệu ở biên
+            đến API, cơ sở dữ liệu và dashboard giám sát.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Xem dự án <span aria-hidden="true">↘</span></a>
+            <button class="button secondary" id="print-cv" type="button">In / Lưu PDF</button>
+          </div>
+
+          <ul class="quick-meta" aria-label="Thông tin nhanh">
+            <li><span>LOC</span> Hồ Chí Minh</li>
+            <li><span>FOCUS</span> Embedded / IoT Intern</li>
+            <li><span>STATUS</span> Sẵn sàng học & làm thật</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Sơ đồ năng lực từ cảm biến đến dashboard">
+          <div class="visual-head">
+            <span>LIVE DATA PATH</span>
+            <span class="signal">SIGNAL: OK</span>
+          </div>
+          <div class="core-orbit">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="core">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Vi điều khiển">
+                <rect x="15" y="15" width="34" height="34" rx="3"></rect>
+                <rect x="22" y="22" width="20" height="20" rx="2"></rect>
+                <path d="M7 21h8M7 31h8M7 41h8M49 21h8M49 31h8M49 41h8M21 7v8M31 7v8M41 7v8M21 49v8M31 49v8M41 49v8"></path>
+              </svg>
+              <strong>EDGE</strong>
+              <span>ESP32 / MCU</span>
+            </div>
+            <div class="node node-sensor"><b>01</b><span>SENSORS</span><small>ADC · I2C · RS485</small></div>
+            <div class="node node-model"><b>02</b><span>INFERENCE</span><small>FFT · MLP · OpenCV</small></div>
+            <div class="node node-cloud"><b>03</b><span>TELEMETRY</span><small>MQTT · HTTP/TLS</small></div>
+            <div class="node node-ui"><b>04</b><span>MONITOR</span><small>API · DB · Dashboard</small></div>
+          </div>
+          <div class="terminal-line"><span>&gt;</span> acquiring_signal <i></i><em>200 Hz</em></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Công nghệ nổi bật">
+        <div class="marquee-track">
+          <span>ESP32</span><i>◆</i><span>C / C++</span><i>◆</i><span>Python</span><i>◆</i>
+          <span>PlatformIO</span><i>◆</i><span>MQTT</span><i>◆</i><span>RS485 / Modbus</span><i>◆</i>
+          <span>Edge AI</span><i>◆</i><span>OpenCV</span><i>◆</i><span>Node.js</span><i>◆</i>
+          <span>ESP32</span><i>◆</i><span>C / C++</span><i>◆</i><span>Python</span><i>◆</i>
+          <span>PlatformIO</span><i>◆</i><span>MQTT</span><i>◆</i><span>RS485 / Modbus</span><i>◆</i>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="system-label">PROFILE / 02</p>
+          <h2 id="about-title">Tư duy hệ thống,<br /><span>đi từ tín hiệu thật.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              Mình quan tâm đến phần giao nhau giữa <strong>phần cứng, firmware và phần mềm</strong>:
+              đọc đúng tín hiệu, xử lý ổn định trên thiết bị có tài nguyên giới hạn, rồi đưa dữ liệu
+              đến đúng nơi để kỹ sư vận hành có thể ra quyết định.
+            </p>
+            <p>
+              Mục tiêu thực tập là tham gia vào một đội embedded/IoT có quy trình kỹ thuật rõ ràng,
+              được kiểm thử trên phần cứng thật và học cách đưa prototype đến gần sản phẩm công nghiệp.
+            </p>
+          </div>
+          <div class="principles reveal">
+            <article>
+              <span>01</span>
+              <div><h3>Hardware-aware</h3><p>GPIO, ADC, I2C, UART, RS485 và đặc tính nguồn/tín hiệu.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Real data first</h3><p>Ưu tiên đo, hiệu chuẩn, kiểm tra dữ liệu thật trước khi tối ưu mô hình.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>End-to-end ownership</h3><p>Firmware, giao tiếp, API, lưu trữ và giao diện là một chuỗi thống nhất.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="system-label">SELECTED WORK / 03</p>
+            <h2 id="projects-title">Dự án <span>tiêu biểu.</span></h2>
+          </div>
+          <p>Ba bài toán kết nối thế giới vật lý với phần mềm giám sát.</p>
+        </div>
+
+        <article class="project featured reveal">
+          <div class="project-copy">
+            <div class="project-index"><span>PROJECT 01</span><span>PERSONAL · 2026</span></div>
+            <div class="project-tags"><span>ESP32</span><span>EDGE AI</span><span>PREDICTIVE MAINTENANCE</span></div>
+            <h3>MotorCare <i>Edge AI</i></h3>
+            <p class="project-lead">
+              Hệ thống giám sát sức khỏe động cơ, lấy mẫu cảm biến trên ESP32, suy luận lỗi ngay tại biên
+              và gửi telemetry đã xác thực lên dashboard theo thời gian thực.
+            </p>
+            <div class="project-impact">
+              <div><strong>200 Hz</strong><span>chu kỳ lấy mẫu</span></div>
+              <div><strong>15</strong><span>đặc trưng / cửa sổ</span></div>
+              <div><strong>3</strong><span>nhóm lỗi dự đoán</span></div>
+            </div>
+            <ul class="project-notes">
+              <li>Tách task mạng và queue để HTTP/TLS không chặn quá trình lấy mẫu.</li>
+              <li>Pipeline Python huấn luyện MLP và xuất trọng số sang C++ để suy luận trên firmware.</li>
+              <li>Express API lưu lịch sử, tạo cảnh báo và phục vụ dashboard qua SQLite/Turso.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/minhan2005-noon/motorcare_egde_ai" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a href="https://motorcare-edge-ai.vercel.app" target="_blank" rel="noreferrer">Live system <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="architecture" aria-label="Kiến trúc MotorCare Edge AI">
+            <div class="architecture-head"><span>MOTORCARE / DATA FLOW</span><b>ONLINE</b></div>
+            <div class="sensor-readout">
+              <div><span>TEMP</span><strong>42.8</strong><small>°C</small><i style="--level: 58%"></i></div>
+              <div><span>CURRENT</span><strong>3.24</strong><small>A</small><i style="--level: 42%"></i></div>
+              <div><span>VIBRATION</span><strong>0.18</strong><small>g</small><i style="--level: 28%"></i></div>
+            </div>
+            <div class="flow-map">
+              <div class="flow-box"><small>INPUT</small><strong>Sensors</strong><span>ADC · I2C</span></div>
+              <div class="flow-arrow"><i></i><span>200 Hz</span></div>
+              <div class="flow-box active"><small>EDGE</small><strong>ESP32 + MLP</strong><span>15 → 12 → 8 → 3</span></div>
+              <div class="flow-arrow"><i></i><span>TLS</span></div>
+              <div class="flow-box"><small>CLOUD</small><strong>API + Turso</strong><span>Alerts · History</span></div>
+            </div>
+            <div class="probability">
+              <div><span>Normal</span><i><b style="width: 82%"></b></i><strong>82%</strong></div>
+              <div><span>Vibration</span><i><b style="width: 12%"></b></i><strong>12%</strong></div>
+              <div><span>Overload</span><i><b style="width: 6%"></b></i><strong>06%</strong></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project compact reveal">
+            <div class="project-index"><span>PROJECT 02</span><span>PERSONAL · 2026</span></div>
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 90"><path d="M60 12C34 12 14 32 9 45c5 13 25 33 51 33s46-20 51-33C106 32 86 12 60 12Z"></path><circle cx="60" cy="45" r="16"></circle><circle cx="60" cy="45" r="5"></circle><path d="M82 64v18H65"></path></svg>
+            </div>
+            <div class="project-tags"><span>COMPUTER VISION</span><span>ESP32-CAM</span><span>MQTT</span></div>
+            <h3>Face Recognition<br /><i>Door Lock</i></h3>
+            <p>
+              Prototype kiểm soát ra vào: camera ghi nhận khuôn mặt, Python/OpenCV xác minh người dùng,
+              sau đó sự kiện khóa cửa được chuyển qua MQTT đến thiết bị và dashboard.
+            </p>
+            <div class="mini-flow" aria-label="Luồng nhận diện và mở khóa">
+              <span>Camera</span><i>→</i><span>AI</span><i>→</i><span>MQTT</span><i>→</i><span>Lock</span>
+            </div>
+            <ul class="project-notes">
+              <li>Quản lý người dùng, trạng thái thiết bị và lịch sử truy cập qua Node.js API.</li>
+              <li>Đóng gói backend, web dashboard và Mosquitto bằng Docker Compose.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/minhan2005-noon/face-recognition-door-lock" target="_blank" rel="noreferrer">Xem repository <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project compact reveal">
+            <div class="project-index"><span>PROJECT 03</span><span>TEAM · 2026</span></div>
+            <div class="project-icon industrial" aria-hidden="true">
+              <svg viewBox="0 0 120 90"><path d="M18 76V38l25 13V35l26 16V24h12v52H18Z"></path><path d="M28 64h10M48 64h10M68 64h10M88 64h10M81 36h20v40H81"></path><path d="M90 18v12M84 24h12"></path></svg>
+            </div>
+            <div class="project-tags"><span>INDUSTRIAL IOT</span><span>MODBUS</span><span>4G</span></div>
+            <h3>LATA Industrial<br /><i>Wastewater Monitoring</i></h3>
+            <p>
+              Node quan trắc nước thải thời gian thực, đọc đầu dò công nghiệp qua RS485/Modbus,
+              truyền dữ liệu bằng 4G/Wi-Fi và hiển thị trên dashboard vận hành.
+            </p>
+            <div class="mini-flow" aria-label="Luồng quan trắc nước thải">
+              <span>Probe</span><i>→</i><span>ESP32</span><i>→</i><span>4G</span><i>→</i><span>Cloud</span>
+            </div>
+            <ul class="project-notes">
+              <li>Phụ trách block diagram phần cứng, GPIO plan, tầng nguồn và giao tiếp cảm biến.</li>
+              <li>Prototype DHT22/MQ2 kiểm chứng đường đi dữ liệu và API key trên HTTP endpoint.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/minhan2005-noon/demo_lata" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a href="https://demo-lata-1.onrender.com" target="_blank" rel="noreferrer">Live demo <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-pad" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="system-label">CAPABILITY MAP / 04</p>
+            <h2 id="skills-title">Năng lực <span>kỹ thuật.</span></h2>
+          </div>
+          <p>Không chỉ liệt kê công nghệ - đây là cách chúng kết nối trong một hệ thống.</p>
+        </div>
+
+        <div class="stack-map reveal">
+          <article>
+            <div class="stack-num">L1</div>
+            <div class="stack-title"><span>HARDWARE</span><strong>Thiết bị & giao tiếp</strong></div>
+            <div class="stack-items"><span>ESP32</span><span>ESP32-CAM</span><span>GPIO</span><span>ADC</span><span>I2C</span><span>UART</span><span>RS485</span><span>Modbus</span></div>
+          </article>
+          <article>
+            <div class="stack-num">L2</div>
+            <div class="stack-title"><span>FIRMWARE</span><strong>Điều khiển & kết nối</strong></div>
+            <div class="stack-items"><span>C / C++</span><span>Arduino</span><span>PlatformIO</span><span>Wi-Fi</span><span>HTTP/JSON</span><span>MQTT</span><span>TLS</span></div>
+          </article>
+          <article>
+            <div class="stack-num">L3</div>
+            <div class="stack-title"><span>EDGE / SIGNAL</span><strong>Dữ liệu & suy luận</strong></div>
+            <div class="stack-items"><span>Python</span><span>MATLAB</span><span>OpenCV</span><span>FFT</span><span>FIR / IIR</span><span>Feature extraction</span><span>MLP</span></div>
+          </article>
+          <article>
+            <div class="stack-num">L4</div>
+            <div class="stack-title"><span>APPLICATION</span><strong>Backend & vận hành</strong></div>
+            <div class="stack-items"><span>JavaScript</span><span>Node.js</span><span>Express</span><span>React</span><span>SQLite</span><span>Turso</span><span>REST API</span><span>Docker</span></div>
+          </article>
+        </div>
+
+        <div class="language-panel reveal">
+          <div>
+            <p class="system-label">LANGUAGE LOG</p>
+            <h3>Các ngôn ngữ đã sử dụng</h3>
+          </div>
+          <div class="language-list">
+            <div><strong>C / C++</strong><span>Firmware ESP32, sensor drivers, on-device inference</span><b>EMBEDDED</b></div>
+            <div><strong>Python</strong><span>Signal processing, training pipeline, OpenCV, testing</span><b>AI / DATA</b></div>
+            <div><strong>JavaScript</strong><span>Node.js API, dashboard logic, device integration</span><b>WEB / API</b></div>
+            <div><strong>SQL</strong><span>Schema, migrations, telemetry and access history</span><b>DATABASE</b></div>
+            <div><strong>MATLAB</strong><span>Phân tích tín hiệu và bài toán kỹ thuật</span><b>ENGINEERING</b></div>
+            <div><strong>HTML / CSS</strong><span>Responsive dashboard và giao diện giám sát</span><b>INTERFACE</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education section-pad" aria-labelledby="education-title">
+        <div class="section-heading reveal">
+          <p class="system-label">EDUCATION / 05</p>
+          <h2 id="education-title">Nền tảng <span>học thuật.</span></h2>
+        </div>
+        <div class="education-card reveal">
+          <div class="edu-year">CURRENT</div>
+          <div>
+            <span>ĐẠI HỌC KHOA HỌC TỰ NHIÊN, ĐHQG-HCM</span>
+            <h3>Vật lý học & Kỹ thuật Vật lý</h3>
+            <p>
+              Các học phần liên quan: Lập trình cơ bản, Lập trình hướng đối tượng, Cấu trúc dữ liệu
+              và giải thuật, Toán kỹ thuật, Điện tử cơ bản, Xử lý tín hiệu số, Python, MATLAB và Phân tích dữ liệu.
+            </p>
+          </div>
+          <svg viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="38"></circle><path d="M27 38 48 27l21 11-21 11-21-11Zm8 8v15c8 7 18 7 26 0V46M69 38v20"></path></svg>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact-grid reveal">
+          <div>
+            <p class="system-label">OPEN CHANNEL / 06</p>
+            <h2 id="contact-title">Cùng xây hệ thống<br /><span>chạy được ngoài đời.</span></h2>
+          </div>
+          <div class="contact-copy">
+            <p>
+              Mình đang tìm cơ hội thực tập Embedded Systems / Industrial IoT tại TP.HCM,
+              đặc biệt với các bài toán cảm biến, firmware, truyền thông thiết bị và Edge AI.
+            </p>
+            <a class="contact-mail" href="mailto:hoangminhan2468@gmail.com">hoangminhan2468@gmail.com <span>↗</span></a>
+            <a class="contact-phone" href="tel:+84938508330">+84 938 508 330</a>
+          </div>
+        </div>
+        <div class="contact-footer">
+          <span>HO CHI MINH CITY · VN</span>
+          <a href="https://github.com/minhan2005-noon" target="_blank" rel="noreferrer">GitHub / minhan2005-noon ↗</a>
+          <span>© <span id="year">2026</span> HOÀNG MINH ÂN</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
